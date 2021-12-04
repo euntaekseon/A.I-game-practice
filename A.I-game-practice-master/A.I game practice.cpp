@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <bangtal>
 #include <cstdlib>
@@ -305,6 +305,10 @@ void makeresult_0()
 
 void reset_0()
 {
+    for (int i = 0; i < 40; i++)
+    {
+        result_your_0[i] = 0;
+    }
     trial_0 = 20; count_0 = 0;
     timer_inst_0 = Timer::create(63.0f);
     timer_inst_0->setOnTimerCallback([&](auto)->bool {
